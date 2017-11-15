@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos de mouse</title>
+    <script type="text/javascript" src="JS-02-Eventos-de-mouse.js"></script>
+</head>
+    <body style="font-family:arial"; "background-color:#e2f3e4">
+
+        <h1>Página do curso de JavaScript Intermediário.</h1>
+        <br>
+        
+        <h2>Eventos de mouse</h2>
+
+        <h3>Exemplo de uso de eventos de mouse.</h3> 
+
+        <h4>Indica que você clicou no botão - onmousedown.</h4>
+        <button onmousedown="apertouMouse()" >Botão 1</button><br><br>
+
+        <h4>Indica que você soltou o mouse - onmouseup.</h4>
+        <button onmouseup="soltouMouse()" >Botão 2</button><br><br>
+
+        <h4>Indica que você passou por cima do botão - onmouseover.</h4>
+        <button onmouseover ="emcimaMouse()" >Botão 3</button><br><br>
+
+        <h4>Indica que você passou por cima do botão e depois saiu - onmouseout.</h4>
+        <button onmouseout ="saiuMouse()" >Botão 4</button><br><br>
+
+        <h4>Indica que você acionou o botão direito do mouse - oncontextmenu.</h4>
+        <button oncontextmenu ="return direitoMouse()" >Botão 5</button><br><br>
+
+        <h4>Indica que você deu um clique completo com o mouse - onclick.</h4>
+        <button onclick ="onclickMouse()" >Botão 6</button><br><br>
+
+        <h4>Indica que você se movimentou com o mouse - onmousemove.</h4>
+        <button onmousemove ="mouseMove()" >Botão 7</button><br><br>
+
+        <h4>Indica que você deu um duplo clique com o mouse - ondblclick.</h4>
+        <button ondblclick ="duploCliqueMouse()" >Botão 8</button><br><br>
+
+    </body>
+
+</html>
