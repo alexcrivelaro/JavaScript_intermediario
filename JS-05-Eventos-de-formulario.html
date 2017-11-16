@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos de formulário</title>
+    <script type="text/javascript" src="JS-05-Eventos-de-formulario.js"></script>
+    <style>
+     body{  font-family:arial; background-color:#e2f3e4 }
+     </style>
+</head>
+    <body>
+
+        <h1>Página do curso de JavaScript Intermediário.</h1>
+        <h2>Eventos de formulário</h2>
+        <h3>Exemplo de uso de eventos de formulário.</h3> 
+        
+        <form method="POST"> 
+        <!-- form method="POST" onsubmit="return false" - não envia o formulário -->
+            <input type="text" name="nome" onfocus="focou()" onblur="desfocou()" placeholder="Digite seu nome aqui"><br><br>
+            <select name="cidade" onchange="mudouOpcao(this)" > 
+            <!--(this) = manda o próprio valor como parâmetro-->
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Belo Horizonte</option>
+                <option>Recife</option>
+            </select><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>  
